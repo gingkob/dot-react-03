@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Emoji from './components/emoji'
 import './App.css';
 
 let emojiArr = [
@@ -21,21 +22,13 @@ function App() {
   const handleEvent = (e) => {
     setName(e.target.id)
   }
-  const displayP = false;
   return (
     <div className="container" style={{ backgroundColor: "green", width: "500px", height: "500px", margin: "80px auto" }}>
-      <h1>Hello, World</h1>
-      {displayP && <p>I'm writing JSX!</p>}
+      <h2>Emoji component</h2>
       <ul>
-        {emojiArr.map(emoji => {
-          return (
-            <li key={emoji.id}>
-              <button onClick={handleEvent}>
-                <span role="img" aria-label={emoji.id} id={emoji.id}>{emoji.value}</span>
-              </button>
-            </li>
-          )
-        })}
+        {emojiArr.map(emoji => 
+          <Emoji id={emoji.id} value={emoji.value} onClick={handleEvent} />
+        )}
       </ul>
       <div className="emojiNameContainer">
          <p>{name}</p>

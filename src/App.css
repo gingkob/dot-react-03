@@ -30,3 +30,10 @@ ul>li>button {
 .emojiNameContainer{
   height: 2rem;
 }
+
+h2 {
+  color:whitesmoke;
+  font-style: oblique;
+  font-weight: 200;
+  font-size: 1.75rem;
+}
