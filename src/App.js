@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import Emoji from './components/emoji'
+import Emoji from './components/Emoji'
 import './App.css';
 
 let emojiArr = [
