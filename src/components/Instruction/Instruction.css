@@ -7,4 +7,5 @@ img.instruction {
   border-style: solid;
   border-width: 1px;
   border-radius: 50%;
+  box-shadow: rgb(166, 195, 132) 0px 0px 40px;
 }

@@ -26,7 +26,7 @@ function App() {
   return (
     <div className="container" style={{ backgroundColor: "green", width: "500px", height: "500px", margin: "80px auto" }}>
       <h2>Emoji component</h2>
-        <Instruction />
+        <Instruction onClick={handleEvent}/>
       <ul>
         {emojiArr.map(emoji => 
           <Emoji id={emoji.id} value={emoji.value} onClick={handleEvent} />
