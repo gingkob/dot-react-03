@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import Emoji from './components/Emoji'
+import Emoji from './components/Emoji';
+import Instruction from "./components/Instruction";
 import './App.css';
 
 let emojiArr = [
@@ -30,6 +31,7 @@ function App() {
           <Emoji id={emoji.id} value={emoji.value} onClick={handleEvent} />
         )}
       </ul>
+      <Instruction />
       <div className="emojiNameContainer">
          <p>{name}</p>
       </div>     
